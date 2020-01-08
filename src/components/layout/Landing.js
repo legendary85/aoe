@@ -3,7 +3,7 @@ import React from 'react'
 const Landing = () => {
   return (
     <div id="showcase">
-      <div class="container">
+      <div className="container">
         {/* <div class="showcase-content">
           <h1><span class="text-primary">Enjoy</span> Your Stay</h1>
           <p class="lead">
