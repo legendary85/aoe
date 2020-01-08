@@ -3,7 +3,7 @@ import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 import Landing from './components/layout/Landing'
 import AboutUs from './components/about/AboutUs'
-import Services from './components/services/Services'
+import Card from './components/services/Cards'
 import './App.css';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <div>
       <Navbar />
       <Landing />
-      <Services />
+      <Card />
       <AboutUs />
       <Footer />
     </div>
