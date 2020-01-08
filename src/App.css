@@ -21,6 +21,111 @@ header {
 }
 /* Navar */
 
+.logo img{
+  width:100px;
+  margin-top: 4px
+}
+
+.bar {
+  width:30px;
+  margin:4px;
+  height:3px;
+  color: rgb(139,139,137);
+  background:grey
+}
+
+
+.btn {
+  border:1px solid rgb(156, 156,156);
+  display:inline-block;
+  cursor: pointer;
+  
+}
+
+.logoBtn{
+  background: #424242;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid orange;
+  
+}
+
+ul{
+  list-style:none;
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.showNav {
+  height: 270px
+}
+
+ul li a{
+  background: #424242;
+  display: block;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  text-decoration:none;
+  transition: all 0.5s ease;
+  font-size: 18px;
+  
+}
+
+ul li a:hover {
+  background:#353535;
+  color:orange;
+  text-decoration: none;
+  padding-left: 20px;
+  
+}
+
+/* Responsive Navigation */
+
+@media screen and (min-width:640px){
+  nav{
+    background: #424242;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px
+  }
+
+  .btn {
+    display: none;
+  }
+
+  ul {
+    display: flex; 
+    height:auto
+  }
+
+  /* .showNav {
+    height: 160px
+  } */
+
+  nav ul a{
+    background: transparent;
+  }
+
+  .logoBtn{
+    border:none
+  }
+
+  ul li a:hover{
+    background:none;
+    color:orange;
+    padding-left: 10px
+  }
+}
+
+
+
+
+
+
 .navbar {
   background-color: var(--main-color) !important;
   border-bottom: 1px solid #d5ad6d;
@@ -43,7 +148,7 @@ a {
 /* Landing  */
 #showcase {
   position: relative;
-  background-color: black !important;
+  /* background-color: black !important; */
   background: url("./img/showcase.png") no-repeat center center/cover;
   height: 100vh;
   color: #fff;
@@ -130,6 +235,10 @@ a {
 /* // Footer */
 
 footer{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right:0;
   font-family: 'Ibarra Real Nova', serif;
   background-color: black !important;
   border-top: 1px solid #d5ad6d;
