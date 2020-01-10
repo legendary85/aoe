@@ -1,19 +1,21 @@
-import React from 'react'
+import React, { Component } from 'react'
+// import Footer from '../layout/Footer'
 
-const Landing = () => {
-  return (
-    <div id="showcase">
-      <div className="container">
-        {/* <div class="showcase-content">
-          <h1><span class="text-primary">Enjoy</span> Your Stay</h1>
-          <p class="lead">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Accusantium quod at pariatur, assumenda illum id!
-            </p>
-          <a class="btn" href="about.html">About Our Hotel</a>
-        </div> */}
+import Header from './Header'
+// import Services from '../services/Services'
+import PackageUI from '../packages/packageUI'
+
+class Landing extends Component {
+  render() {
+    return (
+      <div>
+        <Header aoe='to Art Of Entertainment' can='Welcome' />
+        <PackageUI />
+        {/* <Services /> */}
+        {/* <Footer /> */}
       </div>
-    </div>
-  )
+    )
+  }
 }
+
 export default Landing

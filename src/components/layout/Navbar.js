@@ -32,13 +32,13 @@ class Navbar extends Component {
             <Link href="/" onClick={this.closeNavBar}><img src={logo} alt="" /></Link>
           </div>
 
-          <div className="btn mr-3" onClick={this.handleClick}>
+          <div id='navBtn' className="btn mr-3" onClick={this.handleClick}>
             <div className="bar"></div>
             <div className="bar"></div>
             <div className="bar"></div>
           </div>
         </div>
-        <ul className={this.state.isOpen ? 'showNav' : 'undefined'}>
+        <ul id="navLinks" className={this.state.isOpen ? 'showNav' : 'undefined'}>
           {/* replace a tags with link */}
           {/* <li><a href="/">Home</a></li> */}
           <li><Link to="/" onClick={this.closeNavBar}>Home</Link></li>
