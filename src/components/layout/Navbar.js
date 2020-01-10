@@ -1,59 +1,27 @@
 import React, { Component } from 'react'
-import logo from '../../img/showcase.png'
-import { Link } from 'react-router-dom'
 
 class Navbar extends Component {
-
-  state = {
-    isOpen: false
-  }
-
-
-  handleClick = () => {
-    this.setState({
-      isOpen: !this.state.isOpen
-    })
-  }
-
-  closeNavBar = () => {
-    this.setState({
-      isOpen: false
-    })
-  }
-
   render() {
     return (
 
-      <nav>
-        <div className="logoBtn">
-          <div className="logo">
-
-            {/* <a href="#"><img src={logo} alt="" /></a> */}
-            <Link href="/" onClick={this.closeNavBar}><img src={logo} alt="" /></Link>
-          </div>
-
-          <div id='navBtn' className="btn mr-3" onClick={this.handleClick}>
-            <div className="bar"></div>
-            <div className="bar"></div>
-            <div className="bar"></div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="#">Art of Entertainment</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">About</a>
+            <a class="nav-item nav-link" href="#">Packages</a>
+            <a class="nav-item nav-link" href="#">Contact</a>
+            <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Media</a>
           </div>
         </div>
-        <ul id="navLinks" className={this.state.isOpen ? 'showNav' : 'undefined'}>
-          {/* replace a tags with link */}
-          {/* <li><a href="/">Home</a></li> */}
-          <li><Link to="/" onClick={this.closeNavBar}>Home</Link></li>
-          <li><Link to="/about" onClick={this.closeNavBar}>About</Link></li>
-          <li><Link to="/services" onClick={this.closeNavBar}>Packages</Link></li>
-          <li><Link to="" onClick={this.closeNavBar}>Mixes</Link></li>
-          <li><Link to="" onClick={this.closeNavBar}>Contact Us</Link></li>
-        </ul>
       </nav>
+
     )
   }
 }
 
 export default Navbar
-
-
-
-

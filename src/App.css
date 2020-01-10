@@ -76,7 +76,7 @@ header .showcase {
 }
 
 
- #navbtn {
+ #navBarBtn {
   border:1px solid rgb(156, 156,156);
   display:inline-block;
   cursor: pointer;
@@ -125,6 +125,14 @@ header .showcase {
 
 
 /* Services */
+/* 
+#bronzeBtn,
+#goldBtn,
+#platinumBtn{
+  display: inline-flex;
+  justify-content: center;
+  width: 80%;
+} */
 
 .serviceList h1{
   text-align: center;
@@ -161,6 +169,10 @@ header .showcase {
   text-align: center;
 }
 
+/* ul {
+  list-style: none;
+} */
+
 @media screen and (min-width:640px){
   .serviceList-center{
     display: flex;
@@ -186,7 +198,7 @@ header .showcase {
     padding:20px
   }
 
-  #navBtn {
+  #navBarBtn {
     display: none;
   }
 
