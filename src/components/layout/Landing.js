@@ -10,9 +10,12 @@ class Landing extends Component {
     return (
       <div>
         <Header aoe='to Art Of Entertainment' can='Welcome' />
-        <PackageUI />
-        {/* <Services /> */}
-        {/* <Footer /> */}
+        <div className="container">
+
+          <PackageUI />
+          {/* <Services /> */}
+          {/* <Footer /> */}
+        </div>
       </div>
     )
   }

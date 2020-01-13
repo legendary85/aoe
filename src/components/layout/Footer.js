@@ -3,18 +3,25 @@ import React, { Component } from 'react'
 class Footer extends Component {
   render() {
     return (
-      <footer className="footer ">
+      <div id='footer' className="navbar navbar-inverse navbar-fixed-bottom" role='navigation'>
         <div className="container">
-          <div className="social-media">
+          <div className="navbar-text pull-left">
 
-            <a href=""><i className="fab fa-facebook-square fa-2x"></i></a>
-            <a href=""><i className="fab fa-instagram fa-2x"></i></a>
-            <a href=""><i className="fab fa-twitter-square fa-2x"></i></a>
+            <div className="social-media">
+
+              <a href=""><i className="fab fa-facebook-square fa-2x"></i></a>
+              <a href=""><i className="fab fa-instagram fa-2x"></i></a>
+              <a href=""><i className="fab fa-twitter-square fa-2x"></i></a>
+            </div>
+            <p className="mt-2">Art of Entertainment &copy; 2020, All Rights Reserved</p>
           </div>
-          <p className="mt-2">Art of Entertainment &copy; 2020, All Rights Reserved</p>
+          <p>THIS IS A FOOTER</p>
         </div>
-      </footer >
+      </div>
+
+
     )
   }
 }
 export default Footer
+

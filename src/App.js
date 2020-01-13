@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 import Landing from './components/layout/Landing'
@@ -12,21 +11,18 @@ import './App.css';
 function App() {
   return (
     <Router>
-
-
       <Navbar />
-      {/* <Landing />
-      <AboutUs />
-      <Card /> */}
-
-
-      <Switch>
-        <Route exact path='/' component={Landing}></Route>
-        <Route exact path='/about' component={AboutUs}></Route>
-        <Route exact path='/services' component={Card}></Route>
-
-      </Switch>
-      <Footer />
+      <div>
+        {/* <Landing />
+        <AboutUs />
+        <Card /> */}
+        <Switch>
+          <Route exact path='/' component={Landing}></Route>
+          <Route exact path='/about' component={AboutUs}></Route>
+          <Route exact path='/services' component={Card}></Route>
+        </Switch>
+      </div>
+      {/* <Footer /> */}
     </Router>
   );
 }
