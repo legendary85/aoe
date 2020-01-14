@@ -5,6 +5,8 @@ import Footer from './components/layout/Footer'
 import Landing from './components/layout/Landing'
 import AboutUs from './components/about/AboutUs'
 import Card from './components/services/Cards'
+import ContactForm from './components/forms/ContactForm'
+import Services from './components/packages/packageUI'
 
 import './App.css';
 
@@ -19,10 +21,11 @@ function App() {
         <Switch>
           <Route exact path='/' component={Landing}></Route>
           <Route exact path='/about' component={AboutUs}></Route>
-          <Route exact path='/services' component={Card}></Route>
+          <Route exact path='/services' component={Services}></Route>
+          <Route exact path='/contact' component={ContactForm}></Route>
         </Switch>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }

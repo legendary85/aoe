@@ -6,28 +6,112 @@
   box-sizing: border-box;
 }
 
-img {
-  width:100%;
-  height: 100%
+#navbar {
+  background: #000 !important;
+  border-bottom: 1px solid gold;
 }
 
+.navbar-brand{
+  color: white !important;
+  
+}
+
+.nav-item {
+  color:white !important;
+}
+
+ .navbar-toggler-icon{
+  background-color: gold;
+}
+
+/* JUMBOTRON */
+/* img {
+  width:100%;
+  height: 100%
+} */
 .jumbotron-fluid {
+  position: relative;
   height:100vh;
+  /* background-image: url('./img/demo.jpg'); */
+  background: #000;
+  background-image: url('./img/showcase.png');
   background-size: cover;
-        text-align: center;
-        width:100%;
-        
-        overflow: hidden;
+  text-align: center;
+  width:100%;
+  overflow: hidden;
+  border-bottom: 1px solid gold;
+}
+
+/* PACKAGES */
+#packages{
+  padding: 60px;
+}
+
+
+
+
+body{
+  /* background: #09d3ac; */
   background: #000;
 }
 
+
+/* Slick-Slider */
+.slides .slick-prev,
+.slides .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+
+
+.slides {
+  position: relative;
+}
+
+.slides .slick-prev,
+.slides .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index:1;
+}
+
+.slides .slick-prev {
+  left: 5%;
+}
+
+.slides .slick-next {
+  right: 5%;
+}
+
+
+/* FOOTER */
+.social-media {
+  display: inline-block;
+  text-align: center;
+  
+}
+
 #footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
+  background-color: #000;
   color: white;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   text-align: center;
+  border-top: 1px solid gold;
 }
+
+
+/* Smartphones */
+@media (max-width: 500px) {
+  .jumbotron-fluid {
+    height:35vh;
+  
+  }
+}
+
+/* @media (max-height: 568px) {
+ 
+} */

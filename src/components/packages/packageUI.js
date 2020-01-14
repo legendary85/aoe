@@ -6,12 +6,10 @@ class PackageUI extends Component {
   render() {
     return (
 
-      <div>
+      <div id='packages' className='container'>
         <div className="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
           <h1>Packages</h1>
         </div>
-
-
         <div className="container">
           <div className="card-deck mb-3 text-center">
             <div className="card mb-4 shadow-sm">
@@ -93,7 +91,7 @@ class PackageUI extends Component {
             </div>
           </div>
 
-          <div class="card-deck text-center">
+          <div id='addOns' class="card-deck text-center">
             <div class="card">
               <div className="card-header">
                 <h5 class="card-title">Add-Ons</h5>

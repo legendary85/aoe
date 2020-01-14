@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Carousel from '../carousel/Carousel'
+import ContactForm from '../forms/ContactForm'
 // import Footer from '../layout/Footer'
 
 import Header from './Header'
@@ -12,8 +14,9 @@ class Landing extends Component {
         <Header aoe='to Art Of Entertainment' can='Welcome' />
         <div className="container">
 
+          <Carousel />
           <PackageUI />
-          {/* <Services /> */}
+          <ContactForm />
           {/* <Footer /> */}
         </div>
       </div>
