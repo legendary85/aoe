@@ -8,7 +8,7 @@ class PackageUI extends Component {
 
       <div id='packages' className='container'>
         <div className="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-          <h1>Packages</h1>
+          <h1 className='package-header'>Packages</h1>
         </div>
         <div className="container">
           <div className="card-deck mb-3 text-center">

@@ -15,8 +15,8 @@ class Landing extends Component {
         <div className="container">
 
           <Carousel />
-          <PackageUI />
-          <ContactForm />
+          {/* <PackageUI />
+          <ContactForm /> */}
           {/* <Footer /> */}
         </div>
       </div>

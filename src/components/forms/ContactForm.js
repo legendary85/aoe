@@ -34,8 +34,8 @@ const ContactForm = () => {
                   <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
                     <option value=""></option>
                     <option value="Request quotation">Request quotation</option>
-                    <option value="Request order status">Request order status</option>
-                    <option value="Request copy of an invoice">Request copy of an invoice</option>
+                    <option value="Request order status">Wedding</option>
+                    <option value="Request copy of an invoice">Event</option>
                     <option value="Other">Other</option>
                   </select>
                   <div className="help-block with-errors"></div>
@@ -57,8 +57,7 @@ const ContactForm = () => {
             <div class="row">
               <div class="col-md-12">
                 <p class="text-muted">
-                  <strong>*</strong> These fields are required. Contact form template by
-                    <a href="https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form" target="_blank">Bootstrapious</a>.</p>
+                  <strong>*</strong> These fields are required.</p>
               </div>
             </div>
           </div>

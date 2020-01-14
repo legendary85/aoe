@@ -21,11 +21,11 @@ function App() {
         <Switch>
           <Route exact path='/' component={Landing}></Route>
           <Route exact path='/about' component={AboutUs}></Route>
-          <Route exact path='/services' component={Services}></Route>
+          <Route exact path='/packages' component={Services}></Route>
           <Route exact path='/contact' component={ContactForm}></Route>
         </Switch>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   );
 }
